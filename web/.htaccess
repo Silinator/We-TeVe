@@ -1,0 +1,70 @@
+RewriteEngine On
+
+
+RewriteCond %{HTTPS} off
+# First rewrite to HTTPS:
+# Don't put www. here. If it is already there it will be included, if not
+# the subsequent rule will catch it.
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Now, rewrite any request to the wrong domain to use www.
+# [NC] is a case-insensitive match
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#um von u.php=u=username zu user/username kommen:
+RewriteRule ^/?user/([A-Za-z0-9-_?&=]+)$ /we-teve/web/site_u.php?u=$1
+RewriteRule ^/?u/([A-Za-z0-9-_?&=]+)$ /we-teve/web/site_u.php?u=$1
+
+#um von site_v.php=u=username zu user/username/videos kommen:
+RewriteRule ^/?user/([A-Za-z0-9-_?&=]+)/videos$ /we-teve/web/site_v.php?u=$1
+RewriteRule ^/?u/([A-Za-z0-9-_?&=]+)/videos$ /we-teve/web/site_v.php?u=$1
+RewriteRule ^/?user/([A-Za-z0-9-_?&=]+)/videos([A-Za-z0-9-_?&=]+)$ /we-teve/web/site_v.php?u=$1$2
+RewriteRule ^/?u/([A-Za-z0-9-_?&=]+)/videos([A-Za-z0-9-_?&=]+)$ /we-teve/web/site_v.php?u=$1$2
+
+#um von site_i.php=u=username zu user/username/info kommen:
+RewriteRule ^/?user/([A-Za-z0-9-_?&=]+)/info$ /we-teve/web/site_i.php?u=$1
+RewriteRule ^/?u/([A-Za-z0-9-_?&=]+)/info$ /we-teve/web/site_i.php?u=$1
+
+#um von site_a.php=u=username zu user/username/achv kommen:
+RewriteRule ^/?user/([A-Za-z0-9-_?&#=]+)/achv$ /we-teve/web/site_a.php?u=$1
+RewriteRule ^/?u/([A-Za-z0-9-_?&#=]+)/achv$ /we-teve/web/site_a.php?u=$1
+RewriteRule ^/?user/([A-Za-z0-9-_?&#=]+)/achv([A-Za-z0-9-_?&#=]+)$ /we-teve/web/site_a.php?u=$1$2
+RewriteRule ^/?u/([A-Za-z0-9-_?&#=]+)/achv([A-Za-z0-9-_?&#=]+)$ /we-teve/web/site_a.php?u=$1$2
+
+#um von site_p.php=u=username zu user/username/playlist kommen:
+RewriteRule ^/?user/([A-Za-z0-9-_?&=]+)/playlist$ /we-teve/web/site_p.php?u=$1
+RewriteRule ^/?u/([A-Za-z0-9-_?&=]+)/playlist$ /we-teve/web/site_p.php?u=$1
+RewriteRule ^/?user/([A-Za-z0-9-_?&=]+)/playlist([A-Za-z0-9-_?&=]+)$ /we-teve/web/site_p.php?u=$1$2
+RewriteRule ^/?u/([A-Za-z0-9-_?&=]+)/playlist([A-Za-z0-9-_?&=]+)$ /we-teve/web/site_p.php?u=$1$2
+
+
+#watch rewirte
+RewriteRule ^/?watch/([A-Za-z0-9-_?&=/]+)$ /we-teve/web/site_watch.php?v=$1
+RewriteRule ^/?w/([A-Za-z0-9-_?&=/]+)$ /we-teve/web/site_watch.php?v=$1
+RewriteRule ^/?watch/ /we-teve/web/site_watch.php
+RewriteRule ^/?w/ /we-teve/web/site_watch.php
+
+#embed rewirte
+RewriteRule ^/?embed/([A-Za-z0-9-_?&=/]+)$ /we-teve/web/site_embed.php?v=$1
+RewriteRule ^/?e/([A-Za-z0-9-_?&=/]+)$ /we-teve/web/site_embed.php?v=$1
+RewriteRule ^/?embed/ /we-teve/web/site_embed.php
+RewriteRule ^/?e/ /we-teve/web/site_embed.php
+
+
+#video edit rewirte
+RewriteRule ^/?video-manager/edit/([A-Za-z0-9-_?&=/]+)$ /we-teve/web/video-manager/edit.php?v=$1
+
+#playlist rewirte
+RewriteRule ^/?playlist/([A-Za-z0-9-_?&=/]+)$ /we-teve/web/playlists/.php?p=$1
+
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+<FilesMatch "\.(?i:mp4|mp3)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
+
+ErrorDocument 404 /r/error404.php

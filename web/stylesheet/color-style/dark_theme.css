@@ -1,0 +1,1889 @@
+body {
+	background-color: #111111;
+	color: #e7e7e7;
+}
+
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= Farben ======================================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+/*GreenTheme: #247c00;*/
+
+.blue{color: #007abf;}
+.hover_blue:hover,.hover_blue:focus{color: #007abf;}
+.back_blue{background-color: #007abf;}
+
+.red{color: #D52B1E;}
+.hover_red:hover,.hover_red:focus{color: #D52B1E;}
+.back_red{background-color: #D52B1E;}
+
+.green{color: #247c00;}
+.hover_green:hover,.hover_green:focus{color: #247c00;}
+.back_green{background-color: #247c00;}
+
+.gray{color: #333;}
+.hover_gray:hover,.hover_gray:focus{color: #333;}
+.back_gray{background-color: #333;}
+
+.white{color: #fff;}
+.hover_white:hover,.hover_white:focus{color: #fff;}
+.back_white{background-color: #fff;}
+
+
+.content_box{
+	background-color: #222222;
+	color: #ffffff;
+	border:1px solid #000000;
+}
+
+
+/* Coinhive */
+.coinhive_error_text_box{
+	background-color: #222222;
+	color: #ffffff;
+	border:1px solid #000000;
+}
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= Navitop ======================================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+.navitop {
+	border-bottom: 1px solid black;
+}
+
+
+
+/*bookmark*/
+.set_bm_opt{
+	background-color: #222222;
+	box-shadow: 0px 10px 35px 13px #000000;
+}
+
+.set_bm_ph_name{
+	background-color: #333333;
+	color: #eeeeee;
+	border: 1px solid #000000;
+}
+
+.set_bm_add{
+	background-color: #007abf;
+}
+
+
+.bm_time_check{
+	background-color: #333333;
+	color: #eeeeee;
+	border: 1px solid #000000;
+}
+
+.bm_time_val,.sh_time_val,.sh_time_val_qr{
+	color: #007abf;
+}
+
+/*in navi*/
+.bm_navi_title:hover,
+.bm_navi_title:focus{
+  color: #007abf;
+}
+
+.bm_list_line{
+	background-color: #333333;
+}
+
+.bm_list_posi{
+	border-right: 1px solid #ffffff;
+}
+
+.bm_list_edit_btn,.bm_list_save_btn{
+	background-color: #007abf;
+	color: #ffffff;
+}
+
+.bm_list_del_btn,.bm_list_abort_btn{
+	background-color: #D52B1E;
+	color: #ffffff;
+}
+
+
+.bm_list_main_edit_in{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #000000;
+}
+	.bm_list_main_edit_in:focus {
+	    border-color: #007abf;
+	    outline: 0;
+	    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	}
+
+
+
+/*Dropdown-boxen*/
+
+/*level_dropdown*/
+.navi_dropdown{
+	background-color: #222222;
+	border:1px solid #000000;
+	box-shadow: 0px 0px 35px 13px #000000;
+}
+
+.level_list_diary {
+    border-bottom: 1px solid #ffffff;
+}
+
+
+/*message_dropdown*/
+
+.news_counter_val{
+	color: #ffffff;
+	background-color: #007abf;
+}
+
+.mes_title a,.mes_text{
+	color: #ffffff;
+}
+
+.mes_not_read .mes_title a,
+.mes_not_read .mes_text,
+.mes_not_read .mes_switch_btn{
+	color: #007abf;
+}
+
+.mes_hidden_content{
+	border-bottom: 1px solid #ffffff;
+}
+
+/*friend*/
+.fri_hidden_content{
+	border-bottom: 1px solid #ffffff;
+}
+
+.fri_main_content_full a,
+.fri_main_content_full .fri_title,
+.fri_main_content_full .fri_text,
+.fri_main_content a,
+.fri_main_content .fri_title,
+.fri_main_content .fri_text{
+	color: #ffffff;
+}
+
+.fri_main_content:hover a,
+.fri_main_content:hover .fri_title,
+.fri_main_content:hover .fri_text,
+.fri_main_content:focus a,
+.fri_main_content:focus .fri_title,
+.fri_main_content:focus .fri_text{
+	color: #007abf;
+}
+
+.fri_list_button:hover,
+.fri_list_button:focus{
+	color: #007abf;
+}
+
+
+/*notification*/
+
+.notifications{
+  background-color: transparent;
+}
+
+.not_slot{
+	background-color: #333333;
+	border:1px solid #000000;
+	box-shadow: 0px 10px 35px 13px #000000;
+}
+
+.not_title{
+	color: #007abf;
+}
+
+
+.not_time{
+	background-color: #ffffff;
+}
+
+.not_time_left{
+	background-color: #007abf;
+}
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= Navileft ====================================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+.navileft-link {
+	color: #e7e7e7;
+}
+
+.navileft-box:hover .navileft-text,
+.navileft-box:focus .navileft-text{
+	color: #007abf !important;
+}
+
+.navileft-link:hover div {
+	border: 1px solid #007abf;
+	color: #007abf;
+}
+
+.navileft .title{
+	border-bottom: 1px solid #ffffff;
+}
+
+.navileft-link div {
+	border: 1px solid #222;
+	border-bottom: 1px solid #222;
+}
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= Buttons & forms =============================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+
+/*========= buttons ============*/
+
+.blue_btn{
+	background-color: #007abf;
+	color: #ffffff;
+	border: 1px solid #007abf;
+}
+
+.gray_btn{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #333333;
+}
+
+.button:hover,
+.button:focus,
+.search_button:hover,
+.search_button:focus,
+.btn:hover,
+.btn:focus {
+	color: #007abf !important;
+	background-color: transparent !important;
+	border: 1px solid #007abf !important;
+}
+
+div.button:active,
+div.btn:active,
+.search_button:active {
+	color: #ffffff !important;
+	background-color: #333333 !important;
+	border: 1px solid #ffffff !important;
+}
+
+.no-hover:hover,
+.no-hover:focus{
+	border: none !important;;
+	background: none!important;
+	color: none !important;
+}
+
+
+/*========= Forms ============*/
+
+.form-control {
+	background-color: #333333;
+	color: #e7e7e7;
+	border: 1px solid #000000;
+}
+
+.btn[disabled]{
+	display: none !important;
+}
+
+.dropdown-menu {
+	background-color: #222;
+}
+
+.dropdown-menu > li > a {
+	color: #e7e7e7;
+	border: 1px solid #222;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+	color: #007abf;
+	border: 1px solid #007abf;
+	background-color: #222;
+}
+
+label {
+	color: #e7e7e7;
+}
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= Menu ========================================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+
+/*POP UP Menu*/
+.popup_event{
+  background-color: #262626;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.big_popup_event_container{
+  background-color: #262626;
+  color: #ffffff;
+}
+
+.pop_background{background-color: rgba(50, 50, 50, 0.5);}
+
+.pop_ok_btn{
+  background-color: #007abf;
+  color: #ffffff;
+  border: 1px solid #007abf;
+}
+.pop_ok_btn:hover,.pop_ok_btn:focus{border: 1px solid #333333;}
+
+
+
+/*===Watch=====*/
+
+.pm_container_bg,.bm_pm_container_bg{
+  background-color: rgba(5,5,5,0.8);
+}
+
+.pm_container,.bm_pm_container{
+  background-color: #222222;
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+
+
+/*Playlist add Menu*/
+.pl_add_list_line{
+	background-color: #333333;
+	cursor: pointer;
+}
+
+.pl_add_list_line:hover,
+.pl_add_list_line:focus,
+.pl_add_list_line_selectet{
+	background-color: #007abf;
+	color: #ffffff;
+}
+
+.pm_new_pl{
+	background-color: #333333;
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+
+.pm_new_pl_btn{
+	background-color: #007abf;
+	border: 1px solid #007abf;
+	color: #ffffff;
+}
+
+.pm_new_pl_btn:hover,
+.pm_new_pl_btn:focus{
+	background-color: transparent;
+	border: 1px solid #007abf;
+	color: #007abf;
+}
+
+.pl_privacy .activ{
+	background-color: #007abf;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+
+/*Download Menu*/
+.download_list_line{
+	background-color: #333333;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.download_list_line:focus,
+.download_list_line:hover{
+	background-color: #007abf;
+	color: #ffffff;
+}
+
+/*Recoms Menu*/
+.friend_list_line{
+	background-color: #333333;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.friend_list_line:focus,
+.friend_list_line:hover,
+.friend_list_line_selectet{
+	background-color: #007abf;
+	color: #ffffff;
+}
+
+
+/*Menu*/
+
+.menu a {
+	color: black;
+}
+
+.menu h3 {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid black;
+}
+
+.active h3 {
+	color: #007abf;
+	background-color: #222222;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid #222;
+}
+
+.menu h3:hover {
+	color:  #007abf;
+}
+
+.menu.login {
+	background-color: #333;
+}
+
+
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= video info ==================================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+
+/*ver*/
+
+.thumb_vid_box{
+	border-bottom: 1px solid #ffffff;
+}
+
+.videobox .thumb_vid_box{
+	border-bottom: none;
+}
+
+
+/*hor*/
+
+.thumb_hor a.user_name{
+	color: #007abf;
+}
+
+
+/*none*/
+
+.videopreview_title{
+	color: #007abf;
+}
+
+.videopreview_info{
+	color: #bbbbbb;
+}
+
+.videopreview_user_name,
+.videopreview_user_name:hover,
+.videopreview_user_name:focus{
+	color: #ffffff;
+}
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= Watch ========================================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+/*buttos*/
+
+.watch_like_btn,.watch_btn_blue{
+	background-color: #007abf;
+	border: 1px solid #007abf;
+	color: #ffffff;
+}
+
+.watch_dislike_btn,.watch_btn_gray{
+	background-color: #333333;
+	border: 1px solid #333333;
+	color: #ffffff;
+}
+
+.watch_btn:hover,
+.watch_btn:focus,
+.watch_btn_activ{
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+
+.share_btn{
+	background-color: #333333;
+	border: 1px solid #333333;
+	color: #ffffff;
+}
+
+.share_btn:hover,
+.share_btn:focus{
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+/*share content*/
+.sh_link_input{
+	background-color: #333333;
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+
+.video_description .video_extra_title{
+	color: #007abf;
+}
+
+.video_description .video_extra_text{
+	color: #ffffff;
+}
+
+.thumb_play_next_1,.thumb_play_next_2{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #333333;
+}
+	.thumb_play_next_1:hover,
+	.thumb_play_next_1:focus,
+	.thumb_play_next_2:hover,
+	.thumb_play_next_2:focus{
+		border: 1px solid #ffffff;
+	}
+
+.filder_vid_tag{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #333333;
+}
+	.filder_vid_tag:hover,
+	.filder_vid_tag:focus{
+		border: 1px solid #ffffff;
+	}
+
+
+/*Fullscreen*/
+.video_full_info .video_description a,.video_full_info .video_extra_title{
+   color: #bbbbbb;
+}
+
+.video_full_info .video_description .video_extra_text{
+   color: #ffffff;
+}
+
+.video_full_info .video_more_videos .thumb_video_title, .video_full_info .video_more_videos .thumb_video_title a,
+.video_full_info .video_playlist .thumb_video_title, .video_full_info .video_playlist .thumb_video_title a{
+	color: #ffffff;
+}
+
+.video_full_info .video_more_videos .thumb_video_date{
+	color: #bcbcbc;
+}
+
+.video_full_info .thumb-info_box a{
+	color: #dddddd;
+}
+
+.video_full_info .filder_vid_tag{
+	background-color: rgba(255, 255, 255, 0.25);
+	border: 1px solid #ffffff;
+	color: #ffffff;
+}
+	.video_full_info .filder_vid_tag:hover,
+	.video_full_info .filder_vid_tag:focus{
+		border: 1px solid #ffffff;
+		background-color: transparent;
+		color: #ffffff;
+		box-shadow: none;
+	}
+
+.video_full_info .more_vid_seach_in,.video_full_info .more_vid_seach_in:focus{
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	box-shadow: none;
+}
+
+.video_full_info .more_vid_seach_btn{
+	background-color: rgba(255, 255, 255, 0.25) !important;
+	border: 1px solid #ffffff !important;
+	color: #ffffff !important;
+}
+	.video_full_info .more_vid_seach_btn:hover,
+	.video_full_info .more_vid_seach_btn:focus{
+		border: 1px solid #ffffff !important;
+		background-color: transparent !important;
+		color: #ffffff !important;
+		box-shadow: none !important;
+	}
+
+.video_full_info .backtomorevideos{
+	color: #bbbbbb;
+}
+
+.video_full_info .thumb_play_next_1, .video_full_info .thumb_play_next_2{
+	background-color: rgba(255, 255, 255, 0.25);
+	border: 1px solid #ffffff;
+	color: #ffffff;
+}
+	.video_full_info .thumb_play_next_1:hover,
+	.video_full_info .thumb_play_next_1:focus,
+	.video_full_info .thumb_play_next_2:hover,
+	.video_full_info .thumb_play_next_2:focus{
+		border: 1px solid #ffffff;
+		background-color: transparent;
+		color: #ffffff;
+		box-shadow: none;
+	}
+
+/*==============================================================================
+========================== zusatzinfos im video ================================
+==============================================================================*/
+
+
+/*========================== column1 linke spalte ===========================*/
+
+.user_full_info .video_user_navi{
+	border: 2px solid #ffffff;
+	background-color: transparent;
+}
+
+.user_full_info .thumb_vid_title a{
+	color: #bbbbbb;
+}
+
+
+/*========================== column3 rechte spalte ===========================*/
+
+.video_full_info .white{
+	background-color: transparent;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+}
+
+.video_full_info .menu h3 {
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid #ffffff;
+}
+
+.video_full_info .active h3 {
+	color: #ffffff;
+	background-color: transparent;
+	border-left: 2px solid #ffffff;
+	border-top: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
+	border-bottom: 0px solid #ffffff;
+}
+
+.video_full_info .menu h3:hover {
+	color:  #ffffff;
+}
+
+
+/*========================== Video_user in rechter spalte ===========================*/
+
+.video_user_navi{
+	background-color: #222222;
+	border: 1px solid #000;
+}
+
+
+/*========================== Video_user in linken spalte Fullscreen ===========================*/
+
+.user_full_info .username a{
+	color: #dddddd;
+}
+
+.user_full_info .video_user_level{
+	color: #bbbbbb;
+}
+
+.user_full_info .sub_btn{
+	background-color: rgba(255, 255, 255, 0.25);
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+.user_full_info .sub_btn:hover,
+.user_full_info .sub_btn:focus{
+	color: #ffffff !important;
+	border: 1px solid #ffffff !important;
+}
+
+.user_full_info .abo_count{
+	background-color: transparent;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+
+.com_vote_activ .com_up_btn{
+	color: #007abf;
+}
+
+.com_vote_activ .com_down_btn{
+	color: #D52B1E;
+}
+
+.com_vote_error{
+	color: #D52B1E;
+}
+
+
+/*=====================================================================================================================
+========= Playlist on watch Normal ====================================================================================
+=====================================================================================================================*/
+
+.w_pl_title a{
+	color: #ffffff;
+}
+	.w_pl_title a:hover,
+	.w_pl_title a:focus{
+		color: #ffffff;
+	}
+
+.w_pl_head_btn{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #333333;
+}
+	.w_pl_head_btn:hover,
+	.w_pl_head_btn:focus{
+		background-color: transparent;
+		color: #007abf;
+		border: 1px solid #007abf;
+	}
+
+	.w_pl_head_btn-activ{
+		background-color: #007abf;
+		color: #ffffff;
+		border: 1px solid #007abf;
+	}
+
+.w_pl_vid_box{
+	background-color: #333333;
+}
+
+.videoplaylist_more_opt_menu{
+	background-color: #222222;
+	border: 1px solid #000000;
+	outline: 0;
+	box-shadow: 0px 10px 35px 13px #000000;
+}
+
+/*=====================================================================================================================
+========= Playlist on watch Fullscreen ================================================================================
+=====================================================================================================================*/
+
+.video_full_info .w_pl_head_btn{
+	background-color: rgba(256,256,256,0.25);
+	border: 1px solid #ffffff;
+	color: #ffffff;
+}
+	.video_full_info .w_pl_head_btn:hover,
+	.video_full_info .w_pl_head_btn:focus{
+		background-color: transparent;
+		border: 1px solid #ffffff;
+		color: #ffffff;
+	}
+
+	.video_full_info .w_pl_head_btn-activ{
+		background-color: rgba(0, 122, 191, 0.25);
+		border: 1px solid #007abf;
+		color: #ffffff;
+	}
+
+	.video_full_info .w_pl_vid_box{
+		background-color: transparent;
+		border-left: 1px solid #ffffff;
+		color: #ffffff;
+	}
+
+.video_full_info .w_pl_load-videos{
+	background-color: rgba(0, 122, 191, 0.25);
+	border: 1px solid #007abf;
+	color: #ffffff;
+}
+
+
+/*=====================================================================================================================
+========= Kommentare Normal ===========================================================================================
+=====================================================================================================================*/
+
+
+.pholder{
+	color: #9e9e9e;
+}
+
+.com_input:empty:before{
+  color: #9e9e9e;
+}
+
+
+
+.new_com_text,.new_re_com_text{
+	background-color: #333333;
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+
+.new_com_text:focus,.new_re_com_text:focus{
+	border: 1px solid #ffffff;
+}
+
+.com_send_btn{
+	background-color: #007abf;
+	border: 1px solid #007abf;
+	color:#ffffff;
+}
+
+.com_send_btn:hover,
+.com_send_btn:focus{
+	background-color: #333333;
+	border: 1px solid #007abf;
+	color:#007abf;
+}
+
+.com_ans{
+	border-bottom: 1px solid #fff;
+}
+
+
+/*==== Filter ====*/
+.com_search_in{
+	border: 1px solid #000000;
+	background-color: #333333;
+	color: #ffffff;
+}
+
+.com_filter_in{
+	border: 1px solid #000000;
+	background-color: #333333;
+	color: #ffffff;
+}
+
+/*==== end Filter ====*/
+
+
+
+.cancel_re_texting{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #333333;
+}
+
+.cancel_re_texting:hover,
+.cancel_re_texting:focus{
+	color: red;
+	border: 1px solid red;
+}
+
+
+
+/*coms_containert*/
+
+.com_content{
+	background-color: #333333;
+	color: #ffffff;
+}
+
+.com_content_selected{
+	background-color: #777777;
+	color: #ffffff;
+}
+
+.com_user_name{
+	color: #007abf;
+}
+
+.com_re_usermane{
+	color: #cccccc;
+}
+
+.com_re_usermane:hover,
+.com_re_usermane:focus{
+	color: #cccccc;
+	text-decoration: underline;
+}
+
+.com_op{
+	background-color: #007abf;
+	color: #ffffff;
+}
+
+.com_re_btn_box,
+.com_up_btn_box,
+.com_down_btn_box{
+	color: #ffffff;
+}
+
+.com_re_btn_box:hover, .com_re_btn_box:focus,
+.com_up_btn_box:hover, .com_up_btn_box:focus,
+.com_down_btn_box:hover, .com_down_btn_box:focus{
+	text-decoration: none;
+}
+
+.com_re_btn_box:focus,.com_re_btn_box:hover,
+.com_re_btn:focus,.com_re_btn:hover{
+	color: #bcbcbc;
+}
+
+.com_up_btn_box:focus,.com_up_btn_box:hover,
+.com_up_btn:focus,.com_up_btn:hover{
+	color: #007abf;
+}
+
+.com_to_com_btn_box a{
+	color: #cccccc;
+}
+
+.com_down_btn_box:focus,.com_down_btn_box:hover,
+.com_down_btn:focus,.com_down_btn:hover{
+	color: #de0000;
+}
+
+.com_time_spamp{
+	color: #bcbcbc;
+}
+
+.com_showmore{
+	color: #bcbcbc;
+}
+
+.com_more_menu{
+	color: #ffffff;
+	background-color: #222222;
+	border: 1px solid #000000;
+	box-shadow: 0px 0px 8px 1px #080808;
+}
+
+
+
+/*=====================================================================================================================
+========= Kommentare Fullscreen =======================================================================================
+=====================================================================================================================*/
+
+.video_full_info,.user_full_info{
+  background-color: rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 0 216px 234px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 0 216px 234px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 216px 234px rgba(0, 0, 0, 0.4);
+}
+
+.video_full_info .new_com_text,
+.video_full_info .new_re_com_text{
+	background-color: transparent;
+	border: 1px solid #ffffff;
+}
+
+
+/* ===== Filter =========== */
+
+.video_full_info .com_search_sent{
+	background-color: rgba(255, 255, 255, 0.25);
+	border: 1px solid #ffffff;
+	color: #ffffff;
+}
+
+.video_full_info .com_search_sent:hover,
+.video_full_info .com_search_sent:focus{
+	border: 1px solid #ffffff !important;
+	background-color: transparent !important;
+	color: #ffffff !important;
+	box-shadow: none !important;
+}
+
+.video_full_info .com_search_in{
+	border: 1px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.video_full_info .com_filter_in{
+	border: 1px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+  .video_full_info .com_filter{
+		background-color: #5c6265
+	}
+
+/* ===== end Filter =========== */
+
+
+
+.video_full_info .cancel_re_texting{
+	background-color: rgba(256,256,256,0.25);;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+
+.video_full_info .cancel_re_texting:hover,
+.video_full_info .cancel_re_texting:focus{
+	background-color: transparent;
+	color: red;
+	border: 1px solid red;
+}
+
+.video_full_info .com_send_btn{
+	background-color: rgba(256,256,256,0.25);
+	border: 1px solid #ffffff;
+	color:#ffffff;
+}
+
+.video_full_info .com_send_btn:hover,
+.video_full_info .com_send_btn:focus{
+	background-color: rgba(256,256,256,0);
+}
+
+/*coms_containert*/
+
+.video_full_info .com_content{
+	background-color: transparent;
+	border-left: 1px solid #ffffff;
+	color: #ffffff;
+}
+
+.video_full_info .com_content_selected{
+	background-color: transparent;
+	border-left: 2px solid #007abf;
+	color: #ffffff;
+}
+
+.video_full_info .com_user_name{
+	color: #dddddd;
+}
+
+.video_full_info .com_op{
+	background-color: transparent;
+	color: #dddddd;
+}
+
+.video_full_info .vid_t_stamp{
+	color: #bbbbbb;
+}
+
+.video_full_info .com_op_text{
+  color: #ffffff;
+}
+
+.video_full_info .com_user_level {
+	color: #bbbbbb;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+/*=====================================================================================================================
+========= Video player ================================================================================================
+=====================================================================================================================*/
+
+.video-js .vjs-play-progress {
+  background-color: #007abf;
+}
+
+.video-js .vjs-volume-level {
+  background-color: #007abf;
+}
+
+
+
+/*Menü*/
+
+.result_switch_menu{
+	background-color: rgba(51, 51, 51, 0.7);
+	border: 1px solid #ffffff;
+}
+
+.result_arrow{
+	color: #ffffff;
+}
+
+
+/* fummscreen_info navigation */
+
+.fullscreen_infos_menu{
+	background-color: rgba(51, 51, 51, 0.7);
+	border: 1px solid #ffffff;
+}
+
+.fsim_arrow{
+	color: #ffffff;
+}
+
+
+/*=====================================================================================================================
+========= playlist ====================================================================================================
+=====================================================================================================================*/
+
+.plist_info_right{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.plist_info_right:hover,
+.plist_info_right:focus{
+	border: 2px solid #007abf;
+}
+
+.plist_info_center{
+	color: #ffffff;
+}
+
+.plist-info_box{
+	background-color: rgba(51, 51, 51, 0.7);
+}
+
+.plist_title a{
+	color: #007abf;
+}
+
+.plist_title a:hover,
+.plist_title a:focus{
+	color: #007abf;
+}
+
+
+/*on site playlist*/
+
+.pl_header{
+	background-color: #222222;
+}
+
+.pl_info_input:empty::before {
+  color: #9e9e9e;
+}
+
+.pl_info_input{
+	background-color: #333333;
+	border: 1px solid #000000;
+	outline: 0;
+}
+
+.pl_info_input:focus{
+	border: 1px solid #007abf;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.pl_header_edit_del_btn{
+	color: #ffffff;
+	background-color: #D52B1E;
+	border: 1px solid #D52B1E;
+}
+
+.pl_header_edit_save_btn{
+	color: #ffffff;
+	background-color: #007abf;
+	border: 1px solid #007abf;
+}
+
+.pl_header_edit_del_btn:hover,
+.pl_header_edit_del_btn:focus{
+	background-color: transparent;
+	color: #D52B1E;
+	border: 1px solid #D52B1E;
+}
+
+.pl_header_edit_save_btn:hover,
+.pl_header_edit_save_btn:focus{
+	background-color: transparent;
+	color: #007abf;
+	border: 1px solid #007abf;
+}
+
+
+/*pl_site_videos*/
+.vidpl_posi_move_up:hover,
+.vidpl_posi_move_up:focus,
+.vidpl_posi_move_down:hover,
+.vidpl_posi_move_down:focus{
+	color: #ffffff;
+	background-color: #007abf;
+}
+
+/*=====================================================================================================================
+========= subscriptions ===============================================================================================
+=====================================================================================================================*/
+
+.videopreviewline,.videoplaylistline{
+  background-color:  #333333;
+}
+
+.videolist_title{
+	background-color:  #333333;
+}
+
+
+/*====== subscriptions group ======*/
+
+.new_sub_group_btn{
+	background-color: #007abf;
+	border: 1px solid #007abf;
+	color: #ffffff;
+}
+
+.new_sub_group_btn:hover,
+.new_sub_group_btn:focus{
+	background-color: transparent;
+	border: 1px solid #007abf;
+	color: #007abf;
+}
+
+/*=====================================================================================================================
+========= video-manager ===============================================================================================
+=====================================================================================================================*/
+
+.video_edit_button{
+	color: #ffffff;
+	background-color: #007abf;
+	border: 1px solid #007abf;
+}
+
+.video_edit_button:hover,
+.video_edit_button:focus{
+	background-color: transparent;
+	color: #007abf;
+	border: 1px solid #007abf;
+}
+
+
+.video_del_button,.smallmenu_del_yes_button{
+	color: #ffffff;
+	background-color: #D52B1E;
+	border: 1px solid #D52B1E;
+}
+
+.video_del_button:hover,
+.video_del_button:focus,
+.smallmenu_del_yes_button:hover,
+.smallmenu_del_yes_button:focus{
+	background-color: transparent;
+	color: #D52B1E;
+	border: 1px solid #D52B1E;
+}
+
+.smallmenu_del_no_button{
+	color: #ffffff;
+	background-color: #333333;
+	border: 1px solid #333333;
+}
+
+.smallmenu_del_no_button:hover,
+.smallmenu_del_no_button:focus{
+	background-color: transparent;
+	color: #007abf;
+	border: 1px solid #007abf;
+}
+
+.smalldelmenu{
+	background-color: #222222;
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+	.smalldelmenu_bg{ background-color: rgba(51, 51, 51, 0.7); }
+
+/*edit*/
+.thumb_video_info_txt{
+	color: #bbbbbb;
+}
+
+
+/*=====================================================================================================================
+========= Options =====================================================================================================
+=====================================================================================================================*/
+
+.option_holder{
+		background-color: #222222;
+    border: 1px solid #000;
+}
+
+.opt_activ{
+  background-color: #007abf;
+  color: #ffffff;
+}
+
+.opt_activ:hover,
+.opt_activ:focus{
+	color: #ffffff;
+}
+
+
+/*=====================================================================================================================
+========= partner =====================================================================================================
+=====================================================================================================================*/
+
+.part_title{
+  border-bottom: 1px solid #ffffff;
+}
+
+.part_go_partner_btn{
+	background-color: #007abf;
+	color: #ffffff;
+	border: 1px solid #007abf;
+}
+
+.part_go_partner_btn:hover,
+.part_go_partner_btn:focus{
+	background-color: transparent;
+	color: #007abf;
+	border: 1px solid #007abf;
+}
+
+.part_gray_btn{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #333333;
+}
+
+.part_gray_btn:hover,
+.part_gray_btn:focus{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #333333;
+	cursor: not-allowed;
+}
+
+/*Partmer dashboard*/
+.part_payment_line{
+	background-color: #333333;
+	color: #ffffff;
+}
+
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= Upload ======================================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+
+.up_input{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #000000;
+}
+
+.up_input:focus{
+	border: 1px solid #ffffff;
+}
+
+
+.video_privacy .activ{
+  background-color: #007abf;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+.time_in{
+	background-color: #333333;
+	color: #ffffff;
+	border: 1px solid #000000;
+}
+
+.time_in:focus{
+	border: 1px solid #ffffff;
+}
+
+.time_dropdown-menu li:hover,
+.time_dropdown-menu li:focus{
+	background-color: #007abf;
+}
+
+
+
+.video_info_input:empty::before {
+  color: #9e9e9e;
+}
+
+.dropdown-menu{
+	background-color: #333333;
+	border: 1px solid #000000;
+}
+
+.dropdown_select:hover,
+.dropdown_select:focus{
+	background-color: #007abf;
+}
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= Other CSS code===============================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+a {
+	color: #007abf;
+}
+
+a:hover {
+	color: #007abf;
+}
+
+.col-black {
+	color: #e7e7e7;
+}
+
+.white {
+	background-color: #222;
+}
+
+.other-color {
+	background-color: #222;
+}
+
+.pad-15 {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+h1 {
+	color: #e7e7e7;
+}
+
+p.left, p.right {
+	color: #e7e7e7;
+}
+
+.form-control:focus {
+	border-color: #007abf;
+}
+
+.all-videos .glyphicon {
+	color: #e7e7e7;
+}
+
+select.dropdown {
+	background-color: #333333;
+}
+
+div.error {
+	color: #DD0000;
+}
+
+input.error {
+	border: 1px solid #DD0000;
+}
+
+input.error:focus {
+	border-color: #DD0000;
+	box-shadow: 0 0 10px #DD0000;
+}
+
+select.error {
+	border: 1px solid #DD0000;
+}
+
+.float_line{
+	color: transparent;
+	background-color: transparent;
+}
+
+
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= Channel =====================================================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+kanalhead {
+    background-color: #262626;
+    color: #ffffff;
+}
+
+
+home:hover, home:focus,
+videos:hover, videos:focus,
+playlist:hover, playlist:focus,
+edit:hover, edit:focus,
+achievements:hover, achievements:focus,
+info:hover, info:focus,
+.activ {
+    border-bottom: 4px solid #007abf;
+}
+
+channelnavi a:hover{
+	color: #ffffff;
+}
+
+home > a, videos > a, playlist > a, edit > a, info > a, achievements > a {color: #ffffff;}
+
+home,videos,playlist,
+achievements,
+edit,.edit-avatar,.edit-background,
+info {
+    background-color: #333333;
+    border-bottom: 4px solid #333333;
+    color: #ffffff;
+}
+
+
+.allvideoTitle {background-color: #262626;}
+
+.vuid,input.title,textarea.videoinfo,select.land,
+.dauerH,.dauerM,.dauerS{
+    background-color: #333333;
+    color:#ffffff;
+}
+
+.achievement-content, .res_ach_box{
+	background-color: rgba(51, 51, 51, 0.7);
+	color: #ffffff;
+}
+
+.video_ach_info{
+    background-color: rgba(51, 51, 51, 0.7);
+}
+
+.ThreeRes {
+    border-right: 1px solid #000000;
+		overflow: hidden;
+}
+
+.videobeschreibung_box,abonennten_box,.info_frame,.infofulltext_frame,#diskussion-v,.video_ach_box .thumb_ver .thumb_vid_box, .channel_video_results .thumb_ver .thumb_vid_box {
+    background-color: rgba(51, 51, 51, 0.85);
+}
+
+channelcommentstitle,.videotitle a,profil {color: #ffffff;}
+
+name a {color: #007abf;}
+
+.video_inhalt a {color: #007abf;}
+a.video_extra_text {color: #ffffff;}
+
+InfoTitle {color: #007abf;}
+
+.infofulltext_frame a{
+	color: #007abf;
+}
+
+info_line {border-bottom: 1px solid #000000;}
+
+.edit-avatar:hover,.edit-avatar:focus
+,.edit-background:hover,.edit-background:focus {
+    border-bottom: 4px solid #007abf;
+}
+
+h1.box_title {color: #ffffff;}
+
+button.close_box {background: url("../../images/icons/icon.png") scroll -624px 0px;}
+
+button.close_box:hover,
+button.close_box:focus {background: url("../../images/icons/icon.png") scroll -624px -25px;}
+
+.absolute_edit {
+    border: 1px solid #333333;
+}
+
+.edit {
+    background: url("../../images/icons/icon.png") scroll -633px -183px;
+    border: 3px solid #ffffff;
+}
+
+.edit:hover,
+.edit:focus{
+  box-shadow: 0 0 20px #333333;
+  cursor: pointer;
+}
+
+.none_edit{
+    background: url("../../images/icons/icon.png") scroll -706px -183px;
+    border: 3px solid #ffffff;
+}
+
+.none_edit:hover,
+.none_edit:focus{
+  box-shadow: 0 0 20px #ff0000;
+  cursor: pointer;
+}
+
+
+div.nz {
+    border: 1px dashed #333333;
+}
+
+.nz_box{
+  background-color: #333333;
+}
+
+.nz_box:hover,
+.nz_box:focus{
+  box-shadow: 0 0 20px #ffffff;
+}
+
+.nz_box > p {
+    color: #ffffff;
+}
+
+.nz_add_box {
+    background-color: #131313;
+}
+
+div.addBox {
+    background-color: #262626;
+}
+
+div.addBox:hover,
+div.addBox:focus{
+   box-shadow: 0 0 20px #ff0000;
+}
+
+button.addBox{
+	background-color: #007abf;
+}
+
+button.addBox:hover,
+button.addBox:focus{
+   box-shadow: 0 0 20px #ffffff;
+}
+
+div.addBox > h1 {
+    color: #ffffff;
+}
+
+boxTitle {color: #007abf;}
+
+.close_nz_box,.close_box { color: #b70000;}
+
+.nz_background {background-color: rgba(50, 50, 50, 0.5);}
+
+
+
+.editboxtitle {
+    background-color: #131313;
+    border: 1px solid #000000;
+}
+
+editTitle {
+    color: #007abf;
+}
+
+
+.edit_allvideo_box,.c_edit_allvideo_box{
+  background-color: #333333;
+}
+
+.edit_allvideo_box_selected,.c_edit_allvideo_box_selected{
+  background-color: #007abf;
+  color: #ffffff;
+}
+
+
+.edit_box {
+    background-color: #131313;
+    border: 1px solid #000000;
+}
+
+.img_url {
+    background-color: #007abf;
+    color: #ffffff;
+}
+
+.img_url:hover,.img_url:focus{box-shadow: 0 0 20px #333333;}
+
+.btn-default {
+    background-color: #007abf;
+    color: #ffffff;
+}
+
+.btn-default:hover,.btn-default:focus{box-shadow: 0 0 20px #333333;}
+
+.btn {
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.btn-default-color {
+    background-color: #262626;
+    border-color: #2e6da4;
+    color: #007abf;
+}
+.edit_box_box:hover,.edit_box_box:focus{box-shadow: 0 0 20px #333333;}
+
+input.titel,input.text,.scrollbox{background-color: #DBDBDB}
+
+
+.savebutton,.saveuploadbutton {background-color: #007abf; color:#ffffff;}
+
+.savebutton:hover,.savebutton:focus,
+.saveuploadbutton:hover,.saveuploadbutton:focus{color:#333333;}
+
+.channelcommentsbody{background-color: rgba(30, 30, 30, 0.8);}
+
+
+
+
+overview_info{
+  background-color: #333333;
+}
+
+.kanal_info_btn,.kanal_optionen_btn{
+	background: #007abf;
+	color: #ffffff;
+}
+
+.kanal_info_btn:hover,
+.kanal_info_btn:focus,
+.kanal_optionen_btn:hover,
+.kanal_optionen_btn:focus{
+	background: #333333;
+	color: #ffffff;
+}
+
+.kanal_info_btns:hover,
+.kanal_info_btns:focus{
+	border: 1px solid #007abf;
+	background: #333333;
+	color: #007abf;
+}
+
+kanal_info.info_frame, kanal_dis, social_klink, stats{
+	background-color: rgba(51, 51, 51, 0.85);
+  color: #ffffff;
+}
+
+kanal_dis h2, social_klink h2, stats h2, overview_info h2{
+	color: #007abf;
+}
+
+kanal_dis a{
+  color: #007abf;
+}
+
+
+
+/*======================================================================================================================
+========= New Channel Styles ============================================================================================
+=======================================================================================================================*/
+
+/*New channel_header für playlist*/
+
+.channel_header {
+    background-color: #262626;
+    color: #ffffff;
+}
+
+.channel_navi_btn a{
+	color: #ffffff;
+}
+
+.channel_navi_btn{
+  background-color: #333333;
+  border-bottom: 4px solid #333333;
+  color: #ffffff;
+}
+
+.channel_navi_btn:hover,
+.channel_navi_btn:focus,
+.channel_navi_btn_activ{
+  border-bottom: 4px solid #007abf;
+	color: #ffffff;
+}
+
+.channel_navi_more_menu{
+	background-color: #222222;
+  box-shadow: 0px 12px 35px 13px #000000;
+}
+
+
+
+/*Channel EDIT*/
+.i_edit_info_input,.i_edit_info_dropdown,.i_edit_info_textarea{
+	border: 1px solid #000000;
+	background-color: #333333;
+	color: #ffffff;
+}
+
+.i_edit_info_input:disabled{
+	border: 1px solid #000000;
+	background-color: #7a7a7a;
+	color: #ffffff;
+}
+
+.con_arrow{
+  color:#007abf;
+	text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
+.cut_arrow{
+  color:#333333;
+	text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
+
+.videoeditbox .thumb_vid_box{
+	background-color: #333333 !important;
+	border-bottom: none;
+}
+
+.videoeditbox .thumb_vid_box_sel{
+	background-color: #007abf !important;
+	border-bottom: none;
+}
+
+.videoeditbox .thumb_vid_box a,.videoeditbox .thumb_vid_box .blue,
+.videoeditbox .thumb_vid_box_sel a,.videoeditbox .thumb_vid_box_sel .blue{
+	color: #ffffff;
+}
+
+
+.videoeditbox .thumb_holder{
+	background-color: #333333 !important;
+	border-bottom: none;
+}
+
+.videoeditbox .thumb_vid_box_sel{
+	background-color: #007abf !important;
+	border-bottom: none;
+}
+
+.videoeditbox .thumb_holder a,.videoeditbox .thumb_holder .blue,
+.videoeditbox .thumb_vid_box_sel a,.videoeditbox .thumb_vid_box_sel .blue{
+	color: #ffffff;
+}
+
+
+/*=====================================================================================================================
+=======================================================================================================================
+========= CSS Bootstrap welcher erstetz werden ========================================================================
+=======================================================================================================================
+=====================================================================================================================*/
+
+.progress{
+	background-color: #333333;
+	border: 1px solid #000000;
+}
+
+.progress-bar {
+  background-color: #007abf;
+}
+
+
+.btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
+	background-color: #007abf !important;
+	color: #ffffff !important;
+	border: 1px solid #007abf !important;
+}

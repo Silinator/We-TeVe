@@ -1,0 +1,223 @@
+DB:
+  db::$link->query(
+  ->fetch_array();  für schleifen  -> while($row = $results_sql->fetch_array()){  ...  }
+  ->fetch_assoc();  für standard query
+  ->fetch_row();    für count
+
+
+Query:
+  $_sql = db::$link->query("SELECT * FROM kommentar_db WHERE kuid = '$kuid'");
+  $_row = $_sql->fetch_assoc();
+
+
+INSERT:
+  $set_token = "INSERT INTO token_db
+    (token,uuid,token_use,time) VALUES
+    ('$token','$user_uuid','$use','$time')";
+  $set_token = db::$link->query($set_token);
+
+
+UPDATE:
+   $up = "UPDATE _db SET var = '$var' WHERE var = '96'";
+   $up = db::$link->query($up);
+
+
+Land und sprache:
+  $land_mit_label = $c->draw_land('de',1);    icon und land namen
+  $land_ohne_label = $c->draw_land('de',0);   nur icon mit title = name
+
+  $lang_mit_label = $c->draw_lang('de',1);    icon und sparache namen
+  $lang_ohne_label = $c->draw_lang('de',0);   nur icon mit title = name
+
+
+LEVEL:
+  $b_level = $lvl->lvlicon('b',$level);  //background     b_level_ + $b_level
+  $n_level = $lvl->lvlicon('n',$level);  //               n_300_level_ + $n_level
+  $c_level = $lvl->lvlicon('c',$level);  //font-color     f_color_ + $c_level
+  $f_level = $lvl->lvlicon('f',$level);  //font-size      f_level_ + $f_level
+
+  $level = $lvl->lvlinfo('level',$xp);
+  $xp = $lvl->lvlinfo('xp',$level);             Nur für den momentanen Level
+  $totale_xp = $lvl->lvlinfo('t_xp',$level);    Alle xp bis zu dem level mit 0 momentanen vortschritt
+
+
+XP:
+  $lvl->add_xp('action','action_data','uuid');
+    //action -> nummer der aktion <100 = normale aktion wie upvote, >=100 = achievement
+    //action_data -> zusatzinfos wie video oder kommentar
+    //uuid -> nutzer uuid dem die xp gutgeschrieben werden sollen
+
+  $lvl->remove_xp('action','action_data','uuid');
+    //action -> nummer der aktion <100 = normale aktion wie upvote >=100 = achievement
+    //action_data -> zusatzinfos wie video oder kommentar
+    //uuid -> nutzer uuid dem die xp gutgeschrieben werden sollen
+
+ACH:
+  $ach->add_ach('ach','ach_data','uuid');
+
+
+MESSAGE:
+  //add notivication
+  $mes->add_not($not_type,$not_data,$uuid);
+
+  //add messages
+  $mes->add_mes($mes_type,$mes_data,$user_uuid,$del,$uuid);  //$del -> 1/0  1 = war gelöscht | 0 = erster eintrag -> not wird gesetzt
+    //$mes_type
+      //4 = neue(r) /kommentar/antwort (nur auf dem Video noch keine für den Kanal)
+      //5 = hat dein Kommentar geliket
+      //6 = hat dich abonniert
+      //7 = hat dein video geliket
+    //$not_data
+      //4 = kuid
+      //5 = comvote (kuid)
+      //6 = der der aboniert wird (uuid)
+      //7 = vidvote (vuid)
+
+
+TIME:
+  $time     = strtotime(date('Y-m-d H:i:s'));
+  $time_vor = $t->invor($time_in_unix);
+  $dauer = $t->sekinzeit($sekunden);
+
+  $normtime = normtime($unix,$format);
+    $format: 'date' -> d.m.Y / 'time' -> H:i / 'times' -> H:i:s / 'date+time' -> d.m.Y H:i / 'date+times' -> d.m.Y H:i:s
+
+
+USERINFO:
+  $u->userin($erg,$ver,$uuif,'');  //$ver = 1 -> verschlüsselt / $ver = 0 -> unverschlüsselt
+                                //$uuif = this -> user der angemeldet ist
+
+  $u->userinset($in,$val,$uuif); //$in -> welche spalte / $val -> val (unverschlüsselt)
+
+
+MAIL:
+  sendmail($sendto,$subject,$content);
+
+
+EMBED:
+  &autoplay=  true/false
+  &autoreplay=  true/false
+  &hud= true/false
+
+
+VIDEO THUMB:
+  $f->draw_video_pewview($vuid,$hide_avatar,$type,$_dhp,$_ddhp);   //type: hor/ver/none
+
+
+KOMMENTARE:
+  $com->draw_comment($kuid,$layer,$mes,$show,$_dhp);
+    $kuid   ->  kommentar KUID
+    $layer  ->  wie stak es ein gerückt ist (bis layer 4)
+    $mes    ->  1/0  1 = ist in Meldungen oder ähnlichen / 0 = normal in den kommentaren
+    $show   ->  0 = not show 'zum Kommentar' |  1 = show 'zum Kommenta' (zeigt auch keine antworten)  |  2 = kein anklickbare layer marker ■
+    $_dhp   ->  pfad
+
+TOKEN:
+  //Set token
+    //for login
+      $f->settoken('login','true'); // login = login  | true = true / false
+    //for coms and likes
+      $f->settoken('vid_like',''); // vid_like = com / vid_like / com_like  |  'blanc' = '' / blanc
+
+
+ARRAY:
+  array
+    $array = array("null", "eins", "zwei", "drei");
+      echo $array[1];   //echo : eins
+
+  string -> array
+    $arraytext = "null, eins, zwei, drei";
+    $array = (explode(",",$arraytext));
+      echo $array[1];   //echo : eins
+
+  array -> string
+    $string = implode(",", $array);
+
+  string -> array with keys
+    $dataString = "artur:Artur Meier,hans:Hans Meister,fritz:Fritz Sommer";
+    $data = array();
+    foreach (explode(",", $dataString) as $cLine) {
+        list ($cKey, $cValue) = explode(':', $cLine, 2);
+        $data[$cKey] = $cValue;
+    }
+      echo $data['artur']; //echo: Artur Meier
+
+
+
+ALGEMEINE FUNKTIONEN:
+  $short_text = $f->shorttext($text,$länge);
+  $autolink = $f->autolink($text,array("target"=>"_blank"));
+
+  $normtext = $f->normtext($text); // nicht mehr nutzen für titel etc.
+  |-> stattdessen:
+  $normtext = htmlentities($text, ENT_QUOTES); //ersetzt alle Sonderzeichen duch htmlcode codec / ENT_QUOTES = ersetzt '
+  $com->fulltext($input) für video beschreibung und kommentre nutzen
+
+  für JS:
+    var encodedStr = rawStr.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
+     return '&#'+i.charCodeAt(0)+';';
+    }); //ersetzt alle Sonderzeichen duch htmlcode codec
+
+
+  $regincode = $f->regincode();  gibt den code der Bestätigungscode zurück
+  $token = $f->settoken('com',''); //setzt ein Token für die (kommentare = com,)
+
+  $output = mysqli_real_escape_string(db::$link,$input); //save text
+
+  //user_vals
+  $user_id
+  $user_uuid
+  $user_rang
+  $user_name
+  $user_name_s
+  $user_mail
+  $user_abos
+  $user_strikes
+  $user_blocked
+  $user_land
+  $user_lang
+
+
+  $avatar_img = $_ddhp.$f->draw_avatar($user_uuid,$grösse);  $grösse = large und small
+
+
+
+
+JAVASCRIPT:
+
+EIGENE FUNKTIONEN:
+
+gotosite(url,sbs,all);
+//url -> ziehl seite
+//sbs -> 1/2/text backsite
+//all -> 1/0 -> 1 = alles laden / 0 = nur der content nicht das navi laden
+
+gotovideosite(url,sbs,all);
+//url -> ziehl seite
+//sbs -> 1/text backsite
+//all -> 1/0 -> 1 = alles laden / 0 = nur der content nicht das navi laden
+
+
+
+
+cookies:
+  Cookies.set('name', val, { expires: 100, path: '/',secure  : true});  //for 100 days
+  Cookies.get('name');
+  Cookies.remove('name'); // fail!
+  Cookies.remove('name', { path: '' }); // removed!
+
+
+PHP YOUTUBE API:
+  GET VIDEO INFOS:
+
+  $key = "AIzaSyB0lfjskQyR175GlFxZoEyuBYdRW9Y0uiQ"; // -> from: https://console.cloud.google.com/apis/credentials?project=weteve-177204&hl=de&authuser=1 (user: CEO we-teve)
+  $video_id = "hyzhk2NIWOo";  // -> Video id youtube.com/watch?v= video id
+
+  $html = 'https://www.googleapis.com/youtube/v3/videos?id='.$video_id.'&key='.$key.'&part=snippet';
+  $response = file_get_contents($html);
+  $decoded = json_decode($response, true);
+  foreach ($decoded['items'] as $items) {
+       $channelId   = $items['snippet']['channelId'];
+       $title       = $items['snippet']['title'];
+       $description = $items['snippet']['description'];
+  }
