@@ -1,9 +1,7 @@
-web/config.php
-web/config.js
-web/google/
-web/images/avatar/
-web/images/channel/
-web/images/thumb/
-web/images/profile/
-web/images/workfiles/
-web/videos/
+/web/google/
+/web/images/avatar/
+/web/images/channel/
+/web/images/thumb/
+/web/images/profile/
+/web/images/workfiles/
+/web/videos/

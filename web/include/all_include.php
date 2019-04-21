@@ -2,7 +2,7 @@
 
 if($in_save_code_all_include == "&TB2wStZ7u9GY&3yY*bqxUy4nz_vY#^Z"){
 
-require_once( $_hp."config.php" );
+require_once( $_hp."../config/config.php" );
 
 //stammverzeichniss
     //$_hp = für includes

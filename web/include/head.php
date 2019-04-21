@@ -22,7 +22,7 @@
 	echo "<script defer src='".$_dhp."js/cookie".$min.".js'></script>";
 	//echo "<script src='".$_dhp."js/jquery_mobile.js'></script>";
 
-	echo "<script async src='".$_dhp."config.js'></script>";
+	echo "<script async src='".$_dhp."../config/config.js'></script>";
 
 	echo "<script>var isMobile = false;</script>";
 	echo "<script async src='".$_dhp."js/function".$min.".js'></script>";

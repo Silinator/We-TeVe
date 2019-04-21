@@ -2,33 +2,29 @@
 
 require_once("phpmailer.php"); // extends achievement
 include("class.smtp.php");
+require_once( $_hp."../config/mailconfig.php" );
 
-class mail extends SMTP{
+class mail extends SMTP
+{
 
-
-  public function sendmail($sendto,$subject,$content){
-    //$include_check_code = "email*+*%+34621fsgESfg";
-    //$mail_v = "2";
-    //$user_n = $user_n;
-    //include ('../mail_templates/regin_check_code.php');
-
+  public function sendmail($sendto,$subject,$content)
+  {
     $mail = new phpmailer();
     $mail->IsSMTP();
     $mail->CharSet = 'UTF-8';
 
-
-    $mail->Host     = "mail.we-teve.com";
-    $mail->Port     = 587;
-    $mail->SMTPAuth = true;
-    $mail->Username = "service@we-teve.com";
-    $mail->Password = "8&m2U.26_k!h2W!T";
-    $mail->From     = "service@we-teve.com";
-    $mail->FromName = "We-TeVe Service";
+    $mail->Host     = $_mail_host;
+    $mail->Port     = $_mail_port;
+    $mail->SMTPAuth = $_mail_SMTPAuth;
+    $mail->Username = $_mail_username;
+    $mail->Password = $_mail_password;
+    $mail->From     = $_mail_from;
+    $mail->FromName = $_mail_fromname;
 
     $mail->AddAddress($sendto);
     $mail->IsHTML(true);
-    $mail->Subject     = $subject;
-    $mail->Body     =  $content;
+    $mail->Subject = $subject;
+    $mail->Body = $content;
 
     if(!$mail->Send())
        {}
