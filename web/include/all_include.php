@@ -58,11 +58,6 @@ require_once ($_hp.'comments/comments_in.php'); //class -> comments + extends co
 //globale funktionen/class
 require_once ($_hp.'include/function_in.php'); //class -> functions + extends comments   $f
 
-//coinhive funktionen/class
-
-
-require_once ($_hp.'coinhive/coinhive_in.php'); //no class + no extends
-
 
 if($isUserLoggedIn === 1 OR isset($upload_in)){
   //user_vals

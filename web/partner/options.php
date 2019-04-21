@@ -61,7 +61,7 @@ if(isset($_POST['inframed'])){
 
 		<span id='site_scripts'>
 
-			<?php require_once ($_hp.'include/coinhivescript.php'); ?>
+			
 
       <script src='<?php echo $_dhp;?>js/sha256.js'></script>
 			<script>

@@ -41,11 +41,6 @@ if($isUserLoggedIn === 1) {
 		$user_blocked = 1;
 	}
 
-//4. coinhive check
-	$coin_name = "main";
-	require_once ($_hp.'coinhive/coinhive_check.php');
-
-
 // video INSERT
 function vuid() {
 	$check = 0;
@@ -162,7 +157,7 @@ if(isset($_POST['inframed'])){
 
 		<span id='site_scripts'>
 
-			<?php require_once ($_hp.'include/coinhivescript.php'); ?>
+
 
 			<script>
 				var playlist_id = 'not_set';

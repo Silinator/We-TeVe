@@ -45,10 +45,6 @@ if(isset($_GET['u']) AND $_GET['u'] != ""){
     $html_title = "404 Channel not found | We-TeVe"; //Tap title
 }
 
-//4. coinhive check
-$coin_name = $channel_uuid;
-require_once ($_hp.'coinhive/coinhive_check.php');
-
 
 //5. check ist inframed (von andererseite geladen)
 if(isset($_POST['inframed'])){
@@ -102,7 +98,7 @@ if(isset($_POST['inframed'])){
 
 		<span id='site_scripts'>
 
-      <?php require_once ($_hp.'include/coinhivescript.php'); ?>
+
 
 			<script>
 				var playlist_id = 'not_set';

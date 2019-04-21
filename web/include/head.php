@@ -30,14 +30,6 @@
 	echo "<script defer src='".$_dhp."bootstrap/js/bootstrap".$min.".js'></script>";
 	//echo "<script src='https://vjs.zencdn.net/6.2.0/video.js'></script>";
 
-
-	//mining:
-	//echo "<script src='".$_dhp."js/authedmine.min.js'></script>";
-	echo "<script defer src='https://authedmine.com/lib/authedmine.min.js'></script>"; ?>
-		<script>var miner = "";</script>
-
-
-	<?php
 	//echo "<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js'></script>";
 
 	require_once('meta.php'); //noscript stuff

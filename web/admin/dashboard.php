@@ -17,12 +17,8 @@ if($isUserLoggedIn === 1){
 
   if($user_rang == 1){
 
-//4. coinhive check
-$coin_name = "main";
-require_once ($_hp.'coinhive/coinhive_check.php');
 
-
-//5. check ist inframed (von andererseite geladen)
+//4. check ist inframed (von andererseite geladen)
 if(isset($_POST['inframed'])){
 	if($_POST['inframed'] == 1){
 		$infram = 1;
@@ -79,7 +75,6 @@ if(isset($_POST['inframed'])){
 						<div class='option_holder option_navi col-lg-2 col-xl-2 col-spl'>
               <h3><?php echo $l->admin_menu_title_0; ?>:</h3>
               <a href='../admin/dashboard' class='opt_a opt_activ'> <?php echo $l->admin_menu_title_1; ?> </a>
-              <a href='../admin/partner_payments' class='opt_a'> <?php echo $l->admin_menu_title_3; ?> </a>
               <a href='../admin/videos' class='opt_a'> <?php echo $l->admin_menu_title_4; ?> </a>
 						</div>
 

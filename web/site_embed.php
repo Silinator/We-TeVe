@@ -50,12 +50,6 @@ $html_title = $video_title." | We-TeVe"; //Tap title
 $video_title= $f->normtext($video_title);
 
 
-//4. coinhive check
-/*
-$coin_name = $video_uuid;
-require_once ($_hp.'coinhive/coinhive_check.php');
-*/
-
 if(isset($_GET['sort'])){$sort=$_GET['sort'];}else{$sort='0';}
 
 ?>

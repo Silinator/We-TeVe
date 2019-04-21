@@ -30,14 +30,6 @@ if(!is_numeric($page_number)){
 //get current starting point of records
 $position = ($page_number * $item_per_page);
 
-
-// Instantiate the class with your secret key
-$coinhive = new CoinHiveAPI('jxbTJn1DMEYcjcs4oYk7PUyfV1cl2vjb');
-$payout_info = $coinhive->get('/stats/payout');
-	$globalDifficulty = $payout_info->globalDifficulty;
-	$blockReward = $payout_info->blockReward;
-
-
 $results = db::$link->query("SELECT * FROM video_db WHERE uuid = '$user_uuid' AND status != 'deleted' AND status != 'start' ORDER BY uploaddate DESC LIMIT $position, $item_per_page");
 
 while($row = $results->fetch_array()){
@@ -50,18 +42,6 @@ while($row = $results->fetch_array()){
 
 		$max_result 		= $row['max_result'];
 		$render_status2	= $row['render_status'];
-
-		$user = $coinhive->get('/user/balance', ['name' => $video_vuid]);
-
-		if($user->success == true){
-			$video_balance = $user->balance;
-
-			//coinhive
-			$video_payout = (($video_balance / $globalDifficulty) * $blockReward * 0.7) * 0.6;
-			$video_payout = number_format($video_payout, 12,'.','');
-		}else{
-			$video_payout = number_format(0, 12,'.','');
-		}
 
 		//privacy
 		$video_privacy	= $row['privacy'];
@@ -142,7 +122,7 @@ while($row = $results->fetch_array()){
 			echo $f->draw_video_pewview($video_vuid,1,'none','',$_dhp,$_ddhp,'small','0');
 
       echo "<div class='videopreview_title no_overflow'><a href='".$_dhp."watch/".$video_vuid."' title='".$video_title."'>".$video_title."</a></div>";
-			echo"<div class='videopreview_date'>".$video_time." <b> · </b> ".$views." ".$l->views_title." <br/> ".$l->coinhive_video_payout_title.": ".$video_payout." XMR </div>";
+			echo"<div class='videopreview_date'>".$video_time." <b> · </b> ".$views." ".$l->views_title."</div>";
 
 			echo "<div class='videopreview_privacy'>".$privacy_content." ".$l->vm_text0.": ".$status_content."</div>";
 

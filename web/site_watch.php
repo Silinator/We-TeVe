@@ -65,12 +65,7 @@ $vid_like = $f->settoken('vid_like','blanc');
 if(isset($_GET['sort'])){$sort=$_GET['sort'];}else{$sort='0';}
 
 
-//4. coinhive check
-$coin_name = $coin_name;
-require_once ($_hp.'coinhive/coinhive_check.php');
-
-
-//5. check ist inframed (von andererseite geladen)
+//4. check ist inframed (von andererseite geladen)
 if(isset($_POST['inframed'])){
 	if($_POST['inframed'] == 1){
 		$infram = 1;
@@ -145,15 +140,6 @@ if(isset($_POST['inframed'])){
 <?php	}?>
 
 		<span id='site_scripts'>
-
-				<?php
-				if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])){
-					require_once ($_hp.'include/coinhivescript.php');
-				}else{
-					echo "<script class='check_js'></script>";
-				}
-				?>
-
 
 			<div id="fb-root"></div>
 			<script>(function(d, s, id) {

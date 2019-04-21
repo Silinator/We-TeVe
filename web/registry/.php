@@ -14,12 +14,7 @@ $html_title = $l->regin_title_0." | We-TeVe"; //Tap title
 if(isset($_GET['sort'])){$sort=$_GET['sort'];}else{$sort='2';}
 
 
-//4. coinhive check
-$coin_name = "main";
-require_once ($_hp.'coinhive/coinhive_check.php');
-
-
-//5. check ist inframed (von andererseite geladen)
+//4. check ist inframed (von andererseite geladen)
 if(isset($_POST['inframed'])){
 	if($_POST['inframed'] == 1){
 		$infram = 1;
@@ -51,7 +46,7 @@ if($isUserLoggedIn != 1){
 
 		<span id='site_scripts'>
 
-			<?php require_once ($_hp.'include/coinhivescript.php'); ?>
+
 
 			<script src='<?php echo $_dhp;?>js/sha256.js'></script>
 			<script>

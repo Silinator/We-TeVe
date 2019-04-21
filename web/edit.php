@@ -40,12 +40,7 @@ if($isUserLoggedIn === 1){
 }
 
 
-//4. coinhive check
-$coin_name = $channel_uuid;
-require_once ($_hp.'coinhive/coinhive_check.php');
-
-
-//5. check ist inframed (von andererseite geladen)
+//4. check ist inframed (von andererseite geladen)
 if(isset($_POST['inframed'])){
 	if($_POST['inframed'] == 1){
 		$infram = 1;
@@ -82,7 +77,7 @@ if(isset($_POST['inframed'])){
     <div id='channel_container' class='channel_container edit_container'>
 		<span id='site_scripts'>
 
-      <?php require_once ($_hp.'include/coinhivescript.php'); ?>
+
 
 			<script>
 				var playlist_id = 'not_set';
