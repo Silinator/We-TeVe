@@ -11,6 +11,7 @@ and as you see **for the community, by the community!**
 - Set the DB data to yours from you system
 - Set the path to the folder with the **index.php** on your system
 - Set if you system have [curl](https://curl.haxx.se/) or not (false = no, true = yes)
+- Set if you system have [FFmpeg](https://www.ffmpeg.org/) or not (false = no, true = yes)
 - Set the Google API key ([YouTube Data API](https://developers.google.com/youtube/v3/))
 
 ### #2 config.js
