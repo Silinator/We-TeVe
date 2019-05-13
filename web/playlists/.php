@@ -75,14 +75,7 @@ if(isset($_GET['p']) AND $_GET['p'] != ""){
     $html_title = "404 Playlist not found | We-TeVe"; //Tap title
 }
 
-
-
-//4. coinhive check
-$coin_name = $pl_uuid;
-require_once ($_hp.'coinhive/coinhive_check.php');
-
-
-//5. check ist inframed (von andererseite geladen)
+//4. check ist inframed (von andererseite geladen)
 if(isset($_POST['inframed'])){
 	if($_POST['inframed'] == 1){
 		$infram = 1;
@@ -110,7 +103,7 @@ if(isset($_POST['inframed'])){
 
 		<span id='site_scripts'>
 
-			
+
 
 			<script>
 				$(document).ready(function(){

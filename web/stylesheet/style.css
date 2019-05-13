@@ -52,32 +52,6 @@ label{
   margin-bottom: 15px;
 }
 
-
-/* Coinhive */
-.coinhive_error_text_box{
-  display: block;
-  max-width: 40%;
-  min-width: 300px;
-  margin: auto;
-  margin-top: 200px;
-  padding: 5px 20px 15px 20px;
-}
-
-.coinhive_why_box{
-  display: block;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.coinhive_why_box img{
-  max-width: 400px;
-  width: 100%;
-}
-
-
-
-
 /*=====================================================================================================================
 =======================================================================================================================
 ========= Links ======================================================================================================

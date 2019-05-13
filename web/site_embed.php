@@ -67,8 +67,6 @@ if(isset($_GET['sort'])){$sort=$_GET['sort'];}else{$sort='0';}
 
 		<span id='site_scripts'>
 
-			<?php //require_once ($_hp.'include/coinhivescript.php'); ?>
-
 			<script class="docready-script">
 
 				$(document).unbind('ready').ready(function() {
@@ -621,9 +619,3 @@ if(isset($_GET['sort'])){$sort=$_GET['sort'];}else{$sort='0';}
 
 	</body>
 </html>
-
-<?php
-	/*}else{
-			require_once ($_hp.'include/coinhivetext.php');
-	}*/
-?>

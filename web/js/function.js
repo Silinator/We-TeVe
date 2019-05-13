@@ -46,9 +46,6 @@ function docready(){
   ready_navigator();
   resetval();
 
-  var inter_coinhive = null;
-  var inter_coinhive2 = null;
-
   setTimeout( function(){
     $('.docready-script').remove();
     $('.check_js').remove();
@@ -194,7 +191,8 @@ function loadfun_falseLink(){
 
 
   function close_miniplayer(){
-    videojs("we-teve_video").dispose();
+    videojs("miniplayer_video").dispose();
+
     $('.miniplayer_box_header').html('');
     $('.miniplayer_box').addClass('hide');
     $('.miniplayer .video-js .vjs-backtowatch-control').addClass('hide');
@@ -314,8 +312,6 @@ function loadfun_falseLink(){
             clearInterval(inter_testvolum_is_changed);
             clearInterval(ach_animation_interval);
             clearInterval(inter_video_ended);
-            if(typeof inter_coinhive != 'undefined'){clearInterval(inter_coinhive);}
-            if(typeof inter_coinhive2 != 'undefined'){clearInterval(inter_coinhive2);}
         }
 
 
@@ -479,8 +475,6 @@ function loadfun_falseLink(){
             clearInterval(inter_testvolum_is_changed);
             clearInterval(ach_animation_interval);
             clearInterval(inter_video_ended);
-            if(typeof inter_coinhive != 'undefined'){clearInterval(inter_coinhive);}
-            if(typeof inter_coinhive2 != 'undefined'){clearInterval(inter_coinhive2);}
         }
 
 

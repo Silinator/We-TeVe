@@ -43,8 +43,6 @@ if(isset($_POST['inframed'])){
 <?php } ?>
 
 		<span id='site_scripts'>
-
-			<?php // require_once ($_hp.'include/coinhivescript.php'); ?>
 			<script class='check_js'></script>
 			<script>
 
@@ -74,7 +72,7 @@ if(isset($_POST['inframed'])){
 					$video_row = $video_sql->fetch_row();
 					$all_public_videos = $video_row[0];
 
-					
+
 					echo "<div class='part_needs_line'>";
 						if($all_public_videos >= $video_needed){
 							echo "<span class='glyphicon glyphicon-ok blue part_needs_icon'></span> <div class='part_needs_main'> <span class='blue'>".$video_needed."/".$video_needed."</span> </div>".$l->part_needs_title_1;

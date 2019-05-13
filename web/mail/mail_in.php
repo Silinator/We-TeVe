@@ -2,13 +2,14 @@
 
 require_once("phpmailer.php"); // extends achievement
 include("class.smtp.php");
-require_once( $_hp."../config/mailconfig.php" );
 
 class mail extends SMTP
 {
 
   public function sendmail($sendto,$subject,$content)
   {
+    require_once( "../.config/mailconfig.php" );
+
     $mail = new phpmailer();
     $mail->IsSMTP();
     $mail->CharSet = 'UTF-8';

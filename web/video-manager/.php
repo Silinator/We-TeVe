@@ -182,15 +182,6 @@ if(isset($_POST['inframed'])){
 					?>
         </div>
 
-				<?php
-				//if not partner
-				$user_sql = db::$link->query("SELECT partner_status FROM user_find_db WHERE uuid = '$user_uuid'");
-				$user_row = $user_sql->fetch_assoc();
-				if($user_row['partner_status'] == 0){?>
-					<div class='w-100 marg-l-15'>*<?php echo $l->coinhive_video_payout_text; ?></div>
-				<?php
-					}
-				?>
           <div align="center">
           <button class="load_more w-100 marg-l-15 blue_btn btn-default btn" id="load_more_button" <?php if($allvideoCount <= $item_per_page){echo "disabled='disabled'";}else{} ?> ><?php echo $l->loadmore; ?></button>
           <div class="animation_image" style="display:none;"><img src="<?php echo $_dhp; ?>images/icons/ajax-loader.gif"> <?php echo $l->loading; ?></div>

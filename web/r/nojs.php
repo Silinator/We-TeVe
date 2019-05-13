@@ -42,7 +42,6 @@ if(isset($_POST['inframed'])){
 
 		<span id='site_scripts'>
 
-			<?php // require_once ($_hp.'include/coinhivescript.php'); ?>
 			<script class='check_js'></script>
 
 		</span>

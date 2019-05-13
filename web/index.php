@@ -63,7 +63,6 @@ if(isset($_POST['inframed'])){
 
 		<span id='site_scripts'>
 
-			<?php // require_once ($_hp.'include/coinhivescript.php'); ?>
 			<script class='check_js'></script>
 
 			<script src='<?php echo $_dhp;?>js/load_more.js'></script>
@@ -85,15 +84,10 @@ if(isset($_POST['inframed'])){
 				<div class='col-md-12'>
 
 					<?php
-					if($isUserLoggedIn === 1){
-						$user_sql = db::$link->query("SELECT partner_status FROM user_find_db WHERE uuid = '$user_uuid'");
-						$user_row = $user_sql->fetch_assoc();
-						if($user_row['partner_status'] == 0){
-							echo "<div class='w-100 pad-10' style='background-color:#333333'><a href='".$_dhp."r/go_partner'>".$l->part_go_partner_title1."</a></div>";
-						}
-					}else{
+					/*
+						MAIN PAGE MSG
 						echo "<div class='w-100 pad-10' style='background-color:#333333'><a href='".$_dhp."r/go_partner'>".$l->part_go_partner_title1."</a></div>";
-					}
+					*/
 					?>
 
 					<h1><?php echo $l->index_public_videos; ?></h1>
@@ -160,9 +154,4 @@ if(isset($_POST['inframed'])){
 	</body>
 </html>
 <?php }
-
-	/*}else{
-			require_once ($_hp.'include/coinhivetext.php');
-	}*/
-
 ?>
