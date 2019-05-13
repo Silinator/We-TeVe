@@ -1,5 +1,8 @@
 body {
 	background-color: #111111;
+	background-image: url(../../images/bg/img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	color: #e7e7e7;
 }
 
@@ -14,7 +17,7 @@ body {
 
 .blue{color: #007abf;}
 .hover_blue:hover,.hover_blue:focus{color: #007abf;}
-.back_blue{background-color: #007abf;}
+.back_blue{background-color: #007abf66;}
 
 .red{color: #D52B1E;}
 .hover_red:hover,.hover_red:focus{color: #D52B1E;}
@@ -24,9 +27,9 @@ body {
 .hover_green:hover,.hover_green:focus{color: #247c00;}
 .back_green{background-color: #247c00;}
 
-.gray{color: #333;}
-.hover_gray:hover,.hover_gray:focus{color: #333;}
-.back_gray{background-color: #333;}
+.gray{color: #3333334d;}
+.hover_gray:hover,.hover_gray:focus{color: #3333334d;}
+.back_gray{background-color: #3333334d;}
 
 .white{color: #fff;}
 .hover_white:hover,.hover_white:focus{color: #fff;}
@@ -34,15 +37,7 @@ body {
 
 
 .content_box{
-	background-color: #222222;
-	color: #ffffff;
-	border:1px solid #000000;
-}
-
-
-/* Coinhive */
-.coinhive_error_text_box{
-	background-color: #222222;
+	background-color: #2222224d;
 	color: #ffffff;
 	border:1px solid #000000;
 }
@@ -61,23 +56,23 @@ body {
 
 /*bookmark*/
 .set_bm_opt{
-	background-color: #222222;
+	background-color: #2222224d;
 	box-shadow: 0px 10px 35px 13px #000000;
 }
 
 .set_bm_ph_name{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #eeeeee;
 	border: 1px solid #000000;
 }
 
 .set_bm_add{
-	background-color: #007abf;
+	background-color: #007abf66;
 }
 
 
 .bm_time_check{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #eeeeee;
 	border: 1px solid #000000;
 }
@@ -93,7 +88,7 @@ body {
 }
 
 .bm_list_line{
-	background-color: #333333;
+	background-color: #3333334d;;
 }
 
 .bm_list_posi{
@@ -101,7 +96,7 @@ body {
 }
 
 .bm_list_edit_btn,.bm_list_save_btn{
-	background-color: #007abf;
+	background-color: #007abf66;
 	color: #ffffff;
 }
 
@@ -112,7 +107,7 @@ body {
 
 
 .bm_list_main_edit_in{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 	border: 1px solid #000000;
 }
@@ -129,7 +124,7 @@ body {
 
 /*level_dropdown*/
 .navi_dropdown{
-	background-color: #222222;
+	background-color: #2222224d;
 	border:1px solid #000000;
 	box-shadow: 0px 0px 35px 13px #000000;
 }
@@ -143,7 +138,7 @@ body {
 
 .news_counter_val{
 	color: #ffffff;
-	background-color: #007abf;
+	background-color: #007abf66;
 }
 
 .mes_title a,.mes_text{
@@ -196,7 +191,7 @@ body {
 }
 
 .not_slot{
-	background-color: #333333;
+	background-color: #3333334d;;
 	border:1px solid #000000;
 	box-shadow: 0px 10px 35px 13px #000000;
 }
@@ -211,7 +206,7 @@ body {
 }
 
 .not_time_left{
-	background-color: #007abf;
+	background-color: #007abf66;
 }
 
 /*=====================================================================================================================
@@ -239,8 +234,8 @@ body {
 }
 
 .navileft-link div {
-	border: 1px solid #222;
-	border-bottom: 1px solid #222;
+	border: 1px solid #2222224d;
+	border-bottom: 1px solid #2222224d;
 }
 
 /*=====================================================================================================================
@@ -253,15 +248,15 @@ body {
 /*========= buttons ============*/
 
 .blue_btn{
-	background-color: #007abf;
+	background-color: #007abf66;
 	color: #ffffff;
 	border: 1px solid #007abf;
 }
 
 .gray_btn{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
-	border: 1px solid #333333;
+	border: 1px solid #3333334d;;
 }
 
 .button:hover,
@@ -294,7 +289,7 @@ div.btn:active,
 /*========= Forms ============*/
 
 .form-control {
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #e7e7e7;
 	border: 1px solid #000000;
 }
@@ -304,18 +299,18 @@ div.btn:active,
 }
 
 .dropdown-menu {
-	background-color: #222;
+	background-color: #2222224d;
 }
 
 .dropdown-menu > li > a {
 	color: #e7e7e7;
-	border: 1px solid #222;
+	border: 1px solid #2222224d;
 }
 
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
 	color: #007abf;
 	border: 1px solid #007abf;
-	background-color: #222;
+	background-color: #2222224d;
 }
 
 label {
@@ -331,24 +326,24 @@ label {
 
 /*POP UP Menu*/
 .popup_event{
-  background-color: #262626;
+  background-color: #2626264d;
   color: #ffffff;
   border: 1px solid #000000;
 }
 
 .big_popup_event_container{
-  background-color: #262626;
+  background-color: #2626264d;
   color: #ffffff;
 }
 
 .pop_background{background-color: rgba(50, 50, 50, 0.5);}
 
 .pop_ok_btn{
-  background-color: #007abf;
+  background-color: #007abf66;
   color: #ffffff;
   border: 1px solid #007abf;
 }
-.pop_ok_btn:hover,.pop_ok_btn:focus{border: 1px solid #333333;}
+.pop_ok_btn:hover,.pop_ok_btn:focus{border: 1px solid #3333334d;;}
 
 
 
@@ -359,7 +354,7 @@ label {
 }
 
 .pm_container,.bm_pm_container{
-  background-color: #222222;
+  background-color: #2222224d;
 	border: 1px solid #000000;
 	color: #ffffff;
 }
@@ -367,25 +362,25 @@ label {
 
 /*Playlist add Menu*/
 .pl_add_list_line{
-	background-color: #333333;
+	background-color: #3333334d;;
 	cursor: pointer;
 }
 
 .pl_add_list_line:hover,
 .pl_add_list_line:focus,
 .pl_add_list_line_selectet{
-	background-color: #007abf;
+	background-color: #007abf66;
 	color: #ffffff;
 }
 
 .pm_new_pl{
-	background-color: #333333;
+	background-color: #3333334d;;
 	border: 1px solid #000000;
 	color: #ffffff;
 }
 
 .pm_new_pl_btn{
-	background-color: #007abf;
+	background-color: #007abf66;
 	border: 1px solid #007abf;
 	color: #ffffff;
 }
@@ -398,7 +393,7 @@ label {
 }
 
 .pl_privacy .activ{
-	background-color: #007abf;
+	background-color: #007abf66;
 	color: #ffffff;
 	border: 1px solid #ffffff;
 }
@@ -406,20 +401,20 @@ label {
 
 /*Download Menu*/
 .download_list_line{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 	cursor: pointer;
 }
 
 .download_list_line:focus,
 .download_list_line:hover{
-	background-color: #007abf;
+	background-color: #007abf66;
 	color: #ffffff;
 }
 
 /*Recoms Menu*/
 .friend_list_line{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -427,7 +422,7 @@ label {
 .friend_list_line:focus,
 .friend_list_line:hover,
 .friend_list_line_selectet{
-	background-color: #007abf;
+	background-color: #007abf66;
 	color: #ffffff;
 }
 
@@ -445,11 +440,11 @@ label {
 
 .active h3 {
 	color: #007abf;
-	background-color: #222222;
+	background-color: #2222224d;
 	border-left: 1px solid black;
 	border-top: 1px solid black;
 	border-right: 1px solid black;
-	border-bottom: 1px solid #222;
+  border-bottom: 1px solid transparent;
 }
 
 .menu h3:hover {
@@ -457,7 +452,7 @@ label {
 }
 
 .menu.login {
-	background-color: #333;
+	background-color: #3333334d;
 }
 
 
@@ -512,14 +507,14 @@ label {
 /*buttos*/
 
 .watch_like_btn,.watch_btn_blue{
-	background-color: #007abf;
+	background-color: #007abf66;
 	border: 1px solid #007abf;
 	color: #ffffff;
 }
 
 .watch_dislike_btn,.watch_btn_gray{
-	background-color: #333333;
-	border: 1px solid #333333;
+	background-color: #3333334d;;
+	border: 1px solid #3333334d;;
 	color: #ffffff;
 }
 
@@ -532,8 +527,8 @@ label {
 
 
 .share_btn{
-	background-color: #333333;
-	border: 1px solid #333333;
+	background-color: #3333334d;;
+	border: 1px solid #3333334d;;
 	color: #ffffff;
 }
 
@@ -545,7 +540,7 @@ label {
 
 /*share content*/
 .sh_link_input{
-	background-color: #333333;
+	background-color: #3333334d;;
 	border: 1px solid #000000;
 	color: #ffffff;
 }
@@ -559,9 +554,9 @@ label {
 }
 
 .thumb_play_next_1,.thumb_play_next_2{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
-	border: 1px solid #333333;
+	border: 1px solid #3333334d;;
 }
 	.thumb_play_next_1:hover,
 	.thumb_play_next_1:focus,
@@ -571,9 +566,9 @@ label {
 	}
 
 .filder_vid_tag{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
-	border: 1px solid #333333;
+	border: 1px solid #3333334d;;
 }
 	.filder_vid_tag:hover,
 	.filder_vid_tag:focus{
@@ -703,7 +698,7 @@ label {
 /*========================== Video_user in rechter spalte ===========================*/
 
 .video_user_navi{
-	background-color: #222222;
+	background-color: #2222224d;
 	border: 1px solid #000;
 }
 
@@ -763,9 +758,9 @@ label {
 	}
 
 .w_pl_head_btn{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
-	border: 1px solid #333333;
+	border: 1px solid #3333334d;;
 }
 	.w_pl_head_btn:hover,
 	.w_pl_head_btn:focus{
@@ -775,17 +770,17 @@ label {
 	}
 
 	.w_pl_head_btn-activ{
-		background-color: #007abf;
+		background-color: #007abf66;
 		color: #ffffff;
 		border: 1px solid #007abf;
 	}
 
 .w_pl_vid_box{
-	background-color: #333333;
+	background-color: #3333334d;;
 }
 
 .videoplaylist_more_opt_menu{
-	background-color: #222222;
+	background-color: #2222224d;
 	border: 1px solid #000000;
 	outline: 0;
 	box-shadow: 0px 10px 35px 13px #000000;
@@ -842,7 +837,7 @@ label {
 
 
 .new_com_text,.new_re_com_text{
-	background-color: #333333;
+	background-color: #3333334d;;
 	border: 1px solid #000000;
 	color: #ffffff;
 }
@@ -852,14 +847,14 @@ label {
 }
 
 .com_send_btn{
-	background-color: #007abf;
+	background-color: #007abf66;
 	border: 1px solid #007abf;
 	color:#ffffff;
 }
 
 .com_send_btn:hover,
 .com_send_btn:focus{
-	background-color: #333333;
+	background-color: #3333334d;;
 	border: 1px solid #007abf;
 	color:#007abf;
 }
@@ -872,13 +867,13 @@ label {
 /*==== Filter ====*/
 .com_search_in{
 	border: 1px solid #000000;
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 }
 
 .com_filter_in{
 	border: 1px solid #000000;
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 }
 
@@ -887,9 +882,9 @@ label {
 
 
 .cancel_re_texting{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
-	border: 1px solid #333333;
+	border: 1px solid #3333334d;;
 }
 
 .cancel_re_texting:hover,
@@ -903,7 +898,7 @@ label {
 /*coms_containert*/
 
 .com_content{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 }
 
@@ -927,7 +922,7 @@ label {
 }
 
 .com_op{
-	background-color: #007abf;
+	background-color: #007abf66;
 	color: #ffffff;
 }
 
@@ -972,7 +967,7 @@ label {
 
 .com_more_menu{
 	color: #ffffff;
-	background-color: #222222;
+	background-color: #2222224d;
 	border: 1px solid #000000;
 	box-shadow: 0px 0px 8px 1px #080808;
 }
@@ -1168,7 +1163,7 @@ label {
 /*on site playlist*/
 
 .pl_header{
-	background-color: #222222;
+	background-color: #2222224d;
 }
 
 .pl_info_input:empty::before {
@@ -1176,7 +1171,7 @@ label {
 }
 
 .pl_info_input{
-	background-color: #333333;
+	background-color: #3333334d;;
 	border: 1px solid #000000;
 	outline: 0;
 }
@@ -1196,7 +1191,7 @@ label {
 
 .pl_header_edit_save_btn{
 	color: #ffffff;
-	background-color: #007abf;
+	background-color: #007abf66;
 	border: 1px solid #007abf;
 }
 
@@ -1221,7 +1216,7 @@ label {
 .vidpl_posi_move_down:hover,
 .vidpl_posi_move_down:focus{
 	color: #ffffff;
-	background-color: #007abf;
+	background-color: #007abf66;
 }
 
 /*=====================================================================================================================
@@ -1229,18 +1224,18 @@ label {
 =====================================================================================================================*/
 
 .videopreviewline,.videoplaylistline{
-  background-color:  #333333;
+  background-color:  #3333334d;;
 }
 
 .videolist_title{
-	background-color:  #333333;
+	background-color:  #3333334d;;
 }
 
 
 /*====== subscriptions group ======*/
 
 .new_sub_group_btn{
-	background-color: #007abf;
+	background-color: #007abf66;
 	border: 1px solid #007abf;
 	color: #ffffff;
 }
@@ -1258,7 +1253,7 @@ label {
 
 .video_edit_button{
 	color: #ffffff;
-	background-color: #007abf;
+	background-color: #007abf66;
 	border: 1px solid #007abf;
 }
 
@@ -1287,8 +1282,8 @@ label {
 
 .smallmenu_del_no_button{
 	color: #ffffff;
-	background-color: #333333;
-	border: 1px solid #333333;
+	background-color: #3333334d;;
+	border: 1px solid #3333334d;;
 }
 
 .smallmenu_del_no_button:hover,
@@ -1299,7 +1294,7 @@ label {
 }
 
 .smalldelmenu{
-	background-color: #222222;
+	background-color: #2222224d;
 	border: 1px solid #000000;
 	color: #ffffff;
 }
@@ -1316,12 +1311,12 @@ label {
 =====================================================================================================================*/
 
 .option_holder{
-		background-color: #222222;
+		background-color: #2222224d;
     border: 1px solid #000;
 }
 
 .opt_activ{
-  background-color: #007abf;
+  background-color: #007abf66;
   color: #ffffff;
 }
 
@@ -1340,7 +1335,7 @@ label {
 }
 
 .part_go_partner_btn{
-	background-color: #007abf;
+	background-color: #007abf66;
 	color: #ffffff;
 	border: 1px solid #007abf;
 }
@@ -1353,22 +1348,22 @@ label {
 }
 
 .part_gray_btn{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
-	border: 1px solid #333333;
+	border: 1px solid #3333334d;;
 }
 
 .part_gray_btn:hover,
 .part_gray_btn:focus{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
-	border: 1px solid #333333;
+	border: 1px solid #3333334d;;
 	cursor: not-allowed;
 }
 
 /*Partmer dashboard*/
 .part_payment_line{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 }
 
@@ -1381,7 +1376,7 @@ label {
 
 
 .up_input{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 	border: 1px solid #000000;
 }
@@ -1392,13 +1387,13 @@ label {
 
 
 .video_privacy .activ{
-  background-color: #007abf;
+  background-color: #007abf66;
 	color: #ffffff;
 	border: 1px solid #ffffff;
 }
 
 .time_in{
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 	border: 1px solid #000000;
 }
@@ -1409,7 +1404,7 @@ label {
 
 .time_dropdown-menu li:hover,
 .time_dropdown-menu li:focus{
-	background-color: #007abf;
+	background-color: #007abf66;
 }
 
 
@@ -1419,13 +1414,13 @@ label {
 }
 
 .dropdown-menu{
-	background-color: #333333;
+	background-color: #3333334d;;
 	border: 1px solid #000000;
 }
 
 .dropdown_select:hover,
 .dropdown_select:focus{
-	background-color: #007abf;
+	background-color: #007abf66;
 }
 
 /*=====================================================================================================================
@@ -1447,11 +1442,11 @@ a:hover {
 }
 
 .white {
-	background-color: #222;
+	background-color: #2222224d;
 }
 
 .other-color {
-	background-color: #222;
+	background-color: #2222224d;
 }
 
 .pad-15 {
@@ -1477,7 +1472,7 @@ p.left, p.right {
 }
 
 select.dropdown {
-	background-color: #333333;
+	background-color: #3333334d;;
 }
 
 div.error {
@@ -1511,7 +1506,7 @@ select.error {
 =====================================================================================================================*/
 
 kanalhead {
-    background-color: #262626;
+    background-color: #2626264d;
     color: #ffffff;
 }
 
@@ -1536,17 +1531,17 @@ home,videos,playlist,
 achievements,
 edit,.edit-avatar,.edit-background,
 info {
-    background-color: #333333;
-    border-bottom: 4px solid #333333;
+    background-color: #3333334d;;
+    border-bottom: 4px solid #3333334d;;
     color: #ffffff;
 }
 
 
-.allvideoTitle {background-color: #262626;}
+.allvideoTitle {background-color: #2626264d;}
 
 .vuid,input.title,textarea.videoinfo,select.land,
 .dauerH,.dauerM,.dauerS{
-    background-color: #333333;
+    background-color: #3333334d;;
     color:#ffffff;
 }
 
@@ -1596,7 +1591,7 @@ button.close_box:hover,
 button.close_box:focus {background: url("../../images/icons/icon.png") scroll -624px -25px;}
 
 .absolute_edit {
-    border: 1px solid #333333;
+    border: 1px solid #3333334d;;
 }
 
 .edit {
@@ -1606,7 +1601,7 @@ button.close_box:focus {background: url("../../images/icons/icon.png") scroll -6
 
 .edit:hover,
 .edit:focus{
-  box-shadow: 0 0 20px #333333;
+  box-shadow: 0 0 20px #3333334d;;
   cursor: pointer;
 }
 
@@ -1623,11 +1618,11 @@ button.close_box:focus {background: url("../../images/icons/icon.png") scroll -6
 
 
 div.nz {
-    border: 1px dashed #333333;
+    border: 1px dashed #3333334d;;
 }
 
 .nz_box{
-  background-color: #333333;
+  background-color: #3333334d;;
 }
 
 .nz_box:hover,
@@ -1644,7 +1639,7 @@ div.nz {
 }
 
 div.addBox {
-    background-color: #262626;
+    background-color: #2626264d;
 }
 
 div.addBox:hover,
@@ -1653,7 +1648,7 @@ div.addBox:focus{
 }
 
 button.addBox{
-	background-color: #007abf;
+	background-color: #007abf66;
 }
 
 button.addBox:hover,
@@ -1684,11 +1679,11 @@ editTitle {
 
 
 .edit_allvideo_box,.c_edit_allvideo_box{
-  background-color: #333333;
+  background-color: #3333334d;;
 }
 
 .edit_allvideo_box_selected,.c_edit_allvideo_box_selected{
-  background-color: #007abf;
+  background-color: #007abf66;
   color: #ffffff;
 }
 
@@ -1699,37 +1694,37 @@ editTitle {
 }
 
 .img_url {
-    background-color: #007abf;
+    background-color: #007abf66;
     color: #ffffff;
 }
 
-.img_url:hover,.img_url:focus{box-shadow: 0 0 20px #333333;}
+.img_url:hover,.img_url:focus{box-shadow: 0 0 20px #3333334d;;}
 
 .btn-default {
-    background-color: #007abf;
+    background-color: #007abf66;
     color: #ffffff;
 }
 
-.btn-default:hover,.btn-default:focus{box-shadow: 0 0 20px #333333;}
+.btn-default:hover,.btn-default:focus{box-shadow: 0 0 20px #3333334d;;}
 
 .btn {
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .btn-default-color {
-    background-color: #262626;
+    background-color: #2626264d;
     border-color: #2e6da4;
     color: #007abf;
 }
-.edit_box_box:hover,.edit_box_box:focus{box-shadow: 0 0 20px #333333;}
+.edit_box_box:hover,.edit_box_box:focus{box-shadow: 0 0 20px #3333334d;;}
 
 input.titel,input.text,.scrollbox{background-color: #DBDBDB}
 
 
-.savebutton,.saveuploadbutton {background-color: #007abf; color:#ffffff;}
+.savebutton,.saveuploadbutton {background-color: #007abf66; color:#ffffff;}
 
 .savebutton:hover,.savebutton:focus,
-.saveuploadbutton:hover,.saveuploadbutton:focus{color:#333333;}
+.saveuploadbutton:hover,.saveuploadbutton:focus{color:#3333334d;;}
 
 .channelcommentsbody{background-color: rgba(30, 30, 30, 0.8);}
 
@@ -1737,7 +1732,7 @@ input.titel,input.text,.scrollbox{background-color: #DBDBDB}
 
 
 overview_info{
-  background-color: #333333;
+  background-color: #3333334d;;
 }
 
 .kanal_info_btn,.kanal_optionen_btn{
@@ -1749,14 +1744,14 @@ overview_info{
 .kanal_info_btn:focus,
 .kanal_optionen_btn:hover,
 .kanal_optionen_btn:focus{
-	background: #333333;
+	background: #3333334d;;
 	color: #ffffff;
 }
 
 .kanal_info_btns:hover,
 .kanal_info_btns:focus{
 	border: 1px solid #007abf;
-	background: #333333;
+	background: #3333334d;;
 	color: #007abf;
 }
 
@@ -1782,7 +1777,7 @@ kanal_dis a{
 /*New channel_header für playlist*/
 
 .channel_header {
-    background-color: #262626;
+    background-color: #2626264d;
     color: #ffffff;
 }
 
@@ -1791,8 +1786,8 @@ kanal_dis a{
 }
 
 .channel_navi_btn{
-  background-color: #333333;
-  border-bottom: 4px solid #333333;
+  background-color: #3333334d;;
+  border-bottom: 4px solid #3333334d;;
   color: #ffffff;
 }
 
@@ -1804,7 +1799,7 @@ kanal_dis a{
 }
 
 .channel_navi_more_menu{
-	background-color: #222222;
+	background-color: #2222224d;
   box-shadow: 0px 12px 35px 13px #000000;
 }
 
@@ -1813,7 +1808,7 @@ kanal_dis a{
 /*Channel EDIT*/
 .i_edit_info_input,.i_edit_info_dropdown,.i_edit_info_textarea{
 	border: 1px solid #000000;
-	background-color: #333333;
+	background-color: #3333334d;;
 	color: #ffffff;
 }
 
@@ -1829,7 +1824,7 @@ kanal_dis a{
 }
 
 .cut_arrow{
-  color:#333333;
+  color:#3333334d;;
 	text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }
 
@@ -1873,12 +1868,12 @@ kanal_dis a{
 =====================================================================================================================*/
 
 .progress{
-	background-color: #333333;
+	background-color: #3333334d;;
 	border: 1px solid #000000;
 }
 
 .progress-bar {
-  background-color: #007abf;
+  background-color: #007abf66;
 }
 
 
